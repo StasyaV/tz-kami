@@ -1,0 +1,12 @@
+.account {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.account__phone {
+  font-size: 16px;
+  color: $second-color;
+  margin-bottom: 15px;
+}

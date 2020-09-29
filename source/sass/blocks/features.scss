@@ -1,0 +1,58 @@
+.features {
+  margin-bottom: 40px;
+}
+
+.features__title {
+  text-align: left;
+}
+
+.features__list {
+  @include list-reset();
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.features__list-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  &::before {
+    content: "";
+    width: 70px;
+    height: 54px;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &--eco {
+    &::before {
+      background-image: url("../../img/icon-eco.png");
+    }
+  }
+
+  &--best {
+    &::before {
+      background-image: url("../../img/icon-best.png");
+      width: 60px;
+    }
+  }
+
+  &--technology {
+    &::before {
+      background-image: url("../../img/icon-technology.png");
+    }
+  }
+
+  &--love {
+    &::before {
+      background-image: url("../../img/icon-love.png");
+    }
+  }
+}

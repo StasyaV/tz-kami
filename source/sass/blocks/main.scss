@@ -19,8 +19,6 @@ body {
   line-height: 28px;
   font-family: $main-font;
   color: $main-font-color;
-
-  background-color: $main-color;
 }
 
 img {
@@ -44,6 +42,7 @@ input[type="radio"] {
 
 .container {
   margin: 0 auto;
+  padding: 0 20px;
   max-width: 1040px;
 }
 
@@ -53,13 +52,16 @@ button {
   cursor: pointer;
 }
 
-@media (min-width: $desktop-width) {
-  body {
-    display: flex;
-    flex-direction: column;
-    min-height: 1000px;
-  }
+.title {
+  font-family: $main-font;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: left;
+  margin: 0;
+  margin-bottom: 25px;
+}
 
+@media (min-width: $desktop-width) {
   .container {
     padding: 0 30px;
   }

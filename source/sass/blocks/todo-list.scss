@@ -1,0 +1,30 @@
+.todo-list {
+  @include list-reset();
+  padding: 0 15px;
+  margin-bottom: 10px;
+}
+
+.todo-list__item {
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+    border-radius: 50%;
+    border: 1px solid $menu-font-color;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  }
+
+  &--light {
+    &::before {
+      background-color: $main-color;
+    }
+  }
+
+  &--general {
+    &::before {
+      background-color: $second-color;
+    }
+  }
+}

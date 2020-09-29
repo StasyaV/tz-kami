@@ -1,0 +1,99 @@
+.item {  
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.item__title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: medium;
+
+  &::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+    border-radius: 50%;
+    border: 1px solid $menu-font-color;
+  }
+
+  &--light {
+    &::before {
+      background-color: $main-color;
+    }
+  }
+
+  &--general {
+    &::before {
+      background-color: $second-color;
+    }
+  }
+}
+
+.item__todo-list {
+  @include list-reset();
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+
+.item__todo-description {
+  &::before {
+    content: "";
+    display: inline-block;
+    margin-right: 10px;
+    width: 10px;
+    height: 10px;
+    background-image: url("../../img/icon-tick.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--additional {
+    &::before {
+      content: "+";
+      color: $main-color;
+      background-image: none;
+    }
+  }
+}
+
+.item__price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.item__price-description {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  margin-right: 10px;
+}
+
+.item__price-description-feature {
+  font-size: 12px;
+}
+
+.item__price-cost {
+  font-size: 24px;
+  flex-grow: 1;
+  margin: 0;
+}
+
+.item__make-request {
+  border-top: 2px solid $background-color;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item__additional-list-title {
+  margin: 0;
+  font-weight: bold;
+}

@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Smart Dec</title>
+  <title>Ozozon</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="css/style.min.css" rel="stylesheet">
 </head>
@@ -15,13 +15,13 @@
         <div class="header__logo logo">
           <img src="img/logo.png" alt="Company logo" class="logo__img">
         </div>
-        <button class="header__menu-button menu-button menu-button--closed">
+        <button class="header__menu-button header__menu-button--closed">
         </button>
       </div>
       <div class="header__navigation header__navigation--close">
         <div class="header__navigation-account account">
           <a href="tel:+74958453444" class="account__phone">+7 (495) 845-34-44</a>
-          <button class="account__login button">Войти</button>
+          <button class="account__login button button--login">Войти</button>
         </div>
         <nav class="header__navigation-main main-nav">
           <ul class="main-nav__list">
@@ -37,289 +37,307 @@
     </div>
   </header>
   <main class="main-content">
-    <section class="main-content__intro intro">
-      <h1 class="intro__title">Уборка квартир в Москве и Подмосковье</h1>
-      <div class="intro__offer">
-        <p class="intro__offer-description">Идеальный порядок каждую неделю</p>
-        <p class="intro__offer-price">от 1590 руб</p>
-      </div>
-    </section>
-    <section class="main-content__form form">
-      <form method="post" class="form__request">
-        <div class="form__choose-option">
-          <p class="form__option-description">Тип уборки</p>
-          <select name="select-type">
-            <option value="value1" selected>Поддерживающая</option> 
-            <option value="value2">Генеральная</option>
-            <option value="value3">Влажная</option>
-            <option value="value4">Сухая</option>
-          </select>
+    <div class="main-content__container container">
+      <section class="main-content__intro intro">
+        <h1 class="intro__title">Уборка квартир в Москве и Подмосковье</h1>
+        <div class="intro__offer">
+          <p class="intro__offer-description">Идеальный порядок каждую неделю</p>
+          <p class="intro__offer-price">от 1590 руб</p>
         </div>
-        <div class="form__choose-option">
-          <p class="form__option-description">Количество комнат</p>
-          <select name="select-type">
-            <option value="value1" selected>1-комнатная</option> 
-            <option value="value2">2-комнатная</option>
-            <option value="value3">3-комнатная</option>
-            <option value="value4">4-комнатная</option>
-          </select>
+      </section>
+      <section class="main-content__form form">
+        <form method="post" class="form__request">
+          <div class="form__choose-option">
+            <p class="form__option-description">Тип уборки</p>
+            <select name="select-type" class="form__option-list">
+              <option value="value1" selected>Поддерживающая</option> 
+              <option value="value2">Генеральная</option>
+              <option value="value3">Влажная</option>
+              <option value="value4">Сухая</option>
+            </select>
+          </div>
+          <div class="form__choose-option">
+            <p class="form__option-description">Количество комнат</p>
+            <select name="select-type" class="form__option-list">
+              <option value="value1" selected>1-комнатная</option> 
+              <option value="value2">2-комнатная</option>
+              <option value="value3">3-комнатная</option>
+              <option value="value4">4-комнатная</option>
+            </select>
+          </div>
+          <button class="form__submit button button--submit">Оформить заявку</button>
+        </form>
+        <div class="form__offer">
+          Закажите уборку на завтра прямо сейчас и получите <span class="form__offer-type form__offer-type--discount">скидку 15%</span>. 
+          Промокод: <span class="form__offer-type form__offer-type--code">yesterday</span>
         </div>
-        <button class="form__submit button">Оформить заявку</button>
-      </form>
-      <div class="form__offer">
-        Закажите уборку на завтра прямо сейчас и получите <span class="form__offer-type form__offer-type--discount">скидку 15%</span>. 
-        Промокод: <span class="form__offer-type form__offer-type--code">yesterday</span>
-      </div>
-    </section>
-    <section class="main-content__about about-plans">
-      <h2 class="about-plans__title">Про уборки</h2>
-      <p class="about-plans__description">
-        Клинер приедет со всем необходимым для уборки. 
-        Стоимость уборки рассчитывается от количества комнат.
-      </p>
-      <div class="about-plans__types">
-        <p class="about-plans__types-descr">В каждый тариф входит уборка:</p>
-        <ul class="about-plans__types-list">
-          <li class="about-plans__types-item types-item">
-            <input type="radio" name="cleaning-type" id="coridor" checked>
-            <label for="coridor" class="types-item__title">В коридоре</label>
-            <div class="types-item__description">
-              <ul class="types-item__todo-list todo-list">
-                <li class="todo-list__item todo-list__item--light">Чистим зеркала  и стеклянные  поверхности</li>
-                <li class="todo-list__item todo-list__item--light">Протираем все  доступные поверхности</li>
-                <li class="todo-list__item todo-list__item--light">Протираем  двери</li>
-                <li class="todo-list__item todo-list__item--light">Протираем плинтусы</li>
-                <li class="todo-list__item todo-list__item--general">Расставляем обувь</li>
-                <li class="todo-list__item todo-list__item--general">Моем пол и  пылесосим коврики</li>
-                <li class="todo-list__item todo-list__item--general">Очищаем выключатели и дверные ручки</li>
-              </ul>
-            </div>
-          </li>
-          <li class="about-plans__types-item">
-            <input type="radio" name="cleaning-type" id="bathroom" checked>
-            <label for="bathroom" class="types-item__title">Ванная и туалет</label>
-            <div class="types-item__description">
-              <ul class="types-item__todo-list todo-list">
-                <li class="todo-list__item todo-list__item--light">Чистим зеркала  и стеклянные  поверхности</li>
-                <li class="todo-list__item todo-list__item--light">Моем и дезинфицируем ванну, раковину, джакузи, душевую кабину, унитаз</li>
-                <li class="todo-list__item todo-list__item--light">Протираем  двери</li>
-                <li class="todo-list__item todo-list__item--light">Протираем плинтусы</li>
-                <li class="todo-list__item todo-list__item--light">Моем пол и  пылесосим коврики</li>
-                <li class="todo-list__item todo-list__item--light">Протираем шкафы</li>
-                <li class="todo-list__item todo-list__item--light">Убираем мусор</li>
-                <li class="todo-list__item todo-list__item--general">Очищаем кафель в ванной  от всех загрязнений</li>
-                <li class="todo-list__item todo-list__item--general">Очищаем выключатели и дверные ручки</li>
-              </ul>
-            </div>
-          </li>
-          <li class="about-plans__types-item">
-            <input type="radio" name="cleaning-type" id="kitchen" checked>
-            <label for="kitchen" class="types-item__title">Кухня</label>
-            <div class="types-item__description">
-              <ul class="types-item__todo-list todo-list">
-                <li class="todo-list__item todo-list__item--light">Вычищаем пыль из углов</li>
-                <li class="todo-list__item todo-list__item--light">Протираем столешницу,  обеденный стол</li>
-                <li class="todo-list__item todo-list__item--light">Протираем шкафчики</li>
-                <li class="todo-list__item todo-list__item--light">Моем плитку</li>
-                <li class="todo-list__item todo-list__item--light">Чистим раковину</li>
-                <li class="todo-list__item todo-list__item--light">Моем плиту, холодильник и  другую бытовую технику</li>
-                <li class="todo-list__item todo-list__item--light">Убираем мусор</li>
-                <li class="todo-list__item todo-list__item--light">Протираем плинтусы</li>
-                <li class="todo-list__item todo-list__item--light">Моем пол</li>
-                <li class="todo-list__item todo-list__item--general">Удаляем все виды жировых отложения</li>
-                <li class="todo-list__item todo-list__item--general">Моем посуду</li>
-                <li class="todo-list__item todo-list__item--general">Очищаем выключатели и дверные ручки</li>
-                <li class="todo-list__item todo-list__item--general">Протираем двери</li>
-                <li class="todo-list__item todo-list__item--general">Обеспыливание светильников</li>
-              </ul>
-            </div>
-          </li>
-          <li class="about-plans__types-item">
-            <input type="radio" name="cleaning-type" id="room">
-            <label for="room" class="types-item__title">Спальня</label>
-            <div class="types-item__description">
-              <ul class="types-item__todo-list todo-list">
-                <li class="todo-list__item todo-list__item--light">Протираем  мебель</li>
-                <li class="todo-list__item todo-list__item--light">Чистим зеркала и стеклянные поверхности</li>
-                <li class="todo-list__item todo-list__item--light">Убираем мусор</li>
-                <li class="todo-list__item todo-list__item--light">Протираем плинтусы</li>
-                <li class="todo-list__item todo-list__item--light">Вычищаем пыль из углов</li>
-                <li class="todo-list__item todo-list__item--light">Пылесосим ковры</li>
-                <li class="todo-list__item todo-list__item--light">Моем пол</li>
-                <li class="todo-list__item todo-list__item--general">Мойка радиатора отопления</li>
-                <li class="todo-list__item todo-list__item--general">Очистка выключателей и дверных ручек</li>
-                <li class="todo-list__item todo-list__item--general">Обеспыливание светильников</li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <div class="about-plans__image">
-        <img src="#" alt="Изображение выбранного типа уборки">
-        <ul class="about-plans__image-description">
-          <li class="about-plans__image-points about-plans__image-points--light">Поддерживающая уборка</li>
-          <li class="about-plans__image-points about-plans__image-points--general">Генеральная уборка</li>
-        </ul>
-      </div>
-    </section>
-    <section class="main-content__about-work about-work">
-      <h2 class="about-work__title">Типы уборки</h2>
-      <ul class="about-work__list">
-        <li class="about-work__list-item item">
-          <p class="item__title item__title--light">Поддерживающая</p>
-          <ul class="item__todo-list">
-            <li class="item__todo-description">Протираем мебель сверху донизу</li>
-            <li class="item__todo-description">Чистим зеркала и стеклянные поверхности</li>
-            <li class="item__todo-description">Пылесосим ковры</li>
-            <li class="item__todo-description">Моем пол</li>
-            <li class="item__todo-description">Убираем мусор</li>
-            <li class="item__todo-description">Вычищаем пыль из углов</li>
-            <li class="item__todo-description">Протираем плинтусы</li>
+      </section>
+      <section class="main-content__about about-plans">
+        <h2 class="about-plans__title title">Про уборки</h2>
+        <p class="about-plans__description">
+          Клинер приедет со всем необходимым для уборки. 
+          Стоимость уборки рассчитывается от количества комнат.
+        </p>
+        <div class="about-plans__types">
+          <p class="about-plans__types-descr">В каждый тариф входит уборка:</p>
+          <ul class="about-plans__types-list">
+            <li class="about-plans__types-item types-item">
+              <input class="types-item__input" type="radio" name="cleaning-type" id="coridor" checked>
+              <label for="coridor" class="types-item__title">В коридоре</label>
+              <div class="types-item__description">
+                <ul class="types-item__todo-list todo-list">
+                  <li class="todo-list__item todo-list__item--light">Чистим зеркала  и стеклянные  поверхности</li>
+                  <li class="todo-list__item todo-list__item--light">Протираем все  доступные поверхности</li>
+                  <li class="todo-list__item todo-list__item--light">Протираем  двери</li>
+                  <li class="todo-list__item todo-list__item--light">Протираем плинтусы</li>
+                  <li class="todo-list__item todo-list__item--general">Расставляем обувь</li>
+                  <li class="todo-list__item todo-list__item--general">Моем пол и  пылесосим коврики</li>
+                  <li class="todo-list__item todo-list__item--general">Очищаем выключатели и дверные ручки</li>
+                </ul>
+                <img src="img/coridor-mob.jpg" alt="Уборка в коридоре" class="types-item__image">
+              </div>
+            </li>
+            <li class="about-plans__types-item types-item">
+              <input class="types-item__input" type="radio" name="cleaning-type" id="bathroom">
+              <label for="bathroom" class="types-item__title">Ванная и туалет</label>
+              <div class="types-item__description">
+                <ul class="types-item__todo-list todo-list">
+                  <li class="todo-list__item todo-list__item--light">Чистим зеркала  и стеклянные  поверхности</li>
+                  <li class="todo-list__item todo-list__item--light">Моем и дезинфицируем ванну, раковину, джакузи, душевую кабину, унитаз</li>
+                  <li class="todo-list__item todo-list__item--light">Протираем  двери</li>
+                  <li class="todo-list__item todo-list__item--light">Протираем плинтусы</li>
+                  <li class="todo-list__item todo-list__item--light">Моем пол и  пылесосим коврики</li>
+                  <li class="todo-list__item todo-list__item--light">Протираем шкафы</li>
+                  <li class="todo-list__item todo-list__item--light">Убираем мусор</li>
+                  <li class="todo-list__item todo-list__item--general">Очищаем кафель в ванной  от всех загрязнений</li>
+                  <li class="todo-list__item todo-list__item--general">Очищаем выключатели и дверные ручки</li>
+                </ul>
+                <img src="img/bathroom-mob.jpg" alt="Уборка в ванной" class="types-item__image">
+              </div>
+            </li>
+            <li class="about-plans__types-item types-item">
+              <input class="types-item__input" type="radio" name="cleaning-type" id="kitchen">
+              <label for="kitchen" class="types-item__title">Кухня</label>
+              <div class="types-item__description">
+                <ul class="types-item__todo-list todo-list">
+                  <li class="todo-list__item todo-list__item--light">Вычищаем пыль из углов</li>
+                  <li class="todo-list__item todo-list__item--light">Протираем столешницу,  обеденный стол</li>
+                  <li class="todo-list__item todo-list__item--light">Протираем шкафчики</li>
+                  <li class="todo-list__item todo-list__item--light">Моем плитку</li>
+                  <li class="todo-list__item todo-list__item--light">Чистим раковину</li>
+                  <li class="todo-list__item todo-list__item--light">Моем плиту, холодильник и  другую бытовую технику</li>
+                  <li class="todo-list__item todo-list__item--light">Убираем мусор</li>
+                  <li class="todo-list__item todo-list__item--light">Протираем плинтусы</li>
+                  <li class="todo-list__item todo-list__item--light">Моем пол</li>
+                  <li class="todo-list__item todo-list__item--general">Удаляем все виды жировых отложения</li>
+                  <li class="todo-list__item todo-list__item--general">Моем посуду</li>
+                  <li class="todo-list__item todo-list__item--general">Очищаем выключатели и дверные ручки</li>
+                  <li class="todo-list__item todo-list__item--general">Протираем двери</li>
+                  <li class="todo-list__item todo-list__item--general">Обеспыливание светильников</li>
+                </ul>
+                <img src="img/kitchen-mob.jpg" alt="Уборка на кухне" class="types-item__image">
+              </div>
+            </li>
+            <li class="about-plans__types-item types-item">
+              <input class="types-item__input" type="radio" name="cleaning-type" id="room">
+              <label for="room" class="types-item__title">Спальня</label>
+              <div class="types-item__description">
+                <ul class="types-item__todo-list todo-list">
+                  <li class="todo-list__item todo-list__item--light">Протираем  мебель</li>
+                  <li class="todo-list__item todo-list__item--light">Чистим зеркала и стеклянные поверхности</li>
+                  <li class="todo-list__item todo-list__item--light">Убираем мусор</li>
+                  <li class="todo-list__item todo-list__item--light">Протираем плинтусы</li>
+                  <li class="todo-list__item todo-list__item--light">Вычищаем пыль из углов</li>
+                  <li class="todo-list__item todo-list__item--light">Пылесосим ковры</li>
+                  <li class="todo-list__item todo-list__item--light">Моем пол</li>
+                  <li class="todo-list__item todo-list__item--general">Мойка радиатора отопления</li>
+                  <li class="todo-list__item todo-list__item--general">Очистка выключателей и дверных ручек</li>
+                  <li class="todo-list__item todo-list__item--general">Обеспыливание светильников</li>
+                </ul>
+                <img src="img/room-mob.jpg" alt="Уборка в комнате" class="types-item__image">
+              </div>
+            </li>
           </ul>
-          <div class="item__make-request">
-            <div class="item__price">
-              <p class="item__price-description">Стоимость уборки <span class="item__price-description-feature">во всех комнатах</span></p>
-              <p class="item__price-cost">1590 руб.</p>
-            </div>
-            <button class="item__order-button button">Оформить заявку</button>
-          </div>
-        </li>
-        <li class="about-work__list-item">
-          <p class="item__title item__title--general">Генеральная</p>
-          <ul class="item__todo-list">
-            <li class="item__todo-description">Протираем мебель сверху донизу</li>
-            <li class="item__todo-description">Чистим зеркала и стеклянные поверхности</li>
-            <li class="item__todo-description">Пылесосим ковры</li>
-            <li class="item__todo-description">Моем пол</li>
-            <li class="item__todo-description">Убираем мусор</li>
-            <li class="item__todo-description">Вычищаем пыль из углов</li>
-            <li class="item__todo-description">Протираем плинтусы</li>
-          </ul>
-          <p class="item__additional-list-title">Генеральная:</p>
-          <ul class="item__todo-list">
-            <li class="item__todo-description item__todo-description--additional">Мойка радиатора отопления</li>
-            <li class="item__todo-description item__todo-description--additional">Очистка выключателей и дверных ручек</li>
-            <li class="item__todo-description item__todo-description--additional">Обеспыливаение настенных светильников</li>
-          </ul>
-          <div class="item__make-request">
-            <div class="item__price">
-              <p class="item__price-description">Стоимость уборки <span class="item__price-description-feature">во всех комнатах</span></p>
-              <p class="item__price-cost">1990 руб.</p>
-            </div>
-            <button class="item__order-button button">Оформить заявку</button>
-          </div>
-        </li>
-      </ul>
-    </section>
-    <section class="main-content__features features">
-      <h2 class="visually-hidden">Преимущества компании Озозон</h2>
-      <div class="features__container">
-        <p class="features__title">Вы обязательно останетесь довольны, ведь мы...</p>
-        <ul class="features__list">
-          <li class="features__list-item features__list-item--eco">Используем только уникальные экологичные средства</li>
-          <li class="features__list-item features__list-item--best">Отбираем только самых лучших клинеров</li>
-          <li class="features__list-item features__list-item--technology">Используем особо эффективную технологию уборки</li>
-          <li class="features__list-item features__list-item--love">Очень любим наших клиентов и предоставляем скидки</li>
-        </ul>
-      </div>
-    </section>
-    <section class="main-content__faq faq">
-      <h2 class="faq__title">Часто задаваемые вопросы</h2>
-      <ul class="faq__list">
-        <li class="faq__list-item faq__list-item--payment faq-item">
-          <label for="payment" class="faq-item__title">По оплате</label>
-          <input type="radio" name="faq-item" id="payment">
-          <div class="faq-item__content">
-            <ul class="faq-item__questions-list">
-              <li class="faq-item__qusetion">Вопрос по оплате</li>
-              <li class="faq-item__qusetion">Вопрос по оплате</li>
-              <li class="faq-item__qusetion">Вопрос по оплате</li>
-            </ul>
-          </div>
-        </li>
-        <li class="faq__list-item faq__list-cleaning faq-item">
-          <label for="cleaning" class="faq-item__title">По уборке</label>
-          <input type="radio" name="faq-item" id="cleaning">
-          <div class="faq-item__content">
-            <ul class="faq-item__questions-list">
-              <ol class="faq-item__qusetion">
-                <a href="#">Что входит в Ваши уборки?</a></ol>
-              <ol class="faq-item__qusetion">
-                <a href="#">Обязательно ли мое присутствие?</a></ol>
-              <ol class="faq-item__qusetion">
-                <a href="#">Чем вы убираетесь?</a></ol>
-              <ol class="faq-item__qusetion">                
-                <a href="#">Что нужно предоставить клинеру для уборки?</a></ol>
-              <ol class="faq-item__qusetion">
-                <a href="#">Клинеру нужны чистые тряпочки?</a></ol>
-              <ol class="faq-item__qusetion">
-                <a href="#">Могу ли я дать клинеру чаевые? Должен ли я предупреждать вас об этом?</a></ol>
-              <ol class="faq-item__qusetion">
-                <a href="#">У меня большая квартира. Как её считать?</a></ol>
-              <ol class="faq-item__qusetion">
-                <a href="#">Делаете ли вы уборку в выходные?</a></ol>
-              <ol class="faq-item__qusetion">
-                <a href="#">Выезжаете ли вы в область за МКАД?</a></ol>
-              <ol class="faq-item__qusetion">
-                <a href="#">Что такое подписка и в чем ее преимущество?</a></ol>
-              <ol class="faq-item__qusetion">
-                <a href="#">Чем вы не занимаетесь?</a></ol>
-            </ul>
-          </div>
-        </li>
-        <li class="faq__list-item faq__list-item--personal faq-item">
-          <label for="personal" class="faq-item__title">По персоналу</label>
-          <input type="radio" name="faq-item" id="personal">
-          <div class="faq-item__content">
-            <ul class="faq-item__questions-list">
-              <li class="faq-item__qusetion">Вопрос по персоналу</li>
-              <li class="faq-item__qusetion">Вопрос по персоналу</li>
-              <li class="faq-item__qusetion">Вопрос по персоналу</li>
-            </ul>
-          </div>
-        </li>
-      </ul>
-    </section>
-    <section class="main-content__feedback feedback">
-      <h2 class="feedback__title">Отзывы</h2>
-      <div class="feedback__container">
-        <ul class="feedback__list">
-          <li class="feedback__item">
-            <div class="feedback__avatar">
-              <img src="#" alt="Аватарка автора отзыва">
-            </div>
-            <div class="feedback__info">
-              <p class="feedback__author">Олеся Воливач</p>
-              <p class="feedback__date">12 окт 2016 в 13:37</p>
-            </div>
-            <div class="feedback__content">
-              <p>Мне посчастливилось стать первым клиентов Озозона, и могу смело сказать, 
-              что наши встречи будут происходить с завидной регулярностью.</p>
-              <p>Позвонила в компанию после того как увидела поразительно низкую цену
-                (как оказалось, акционную). Ну, думаю, а чего бы и нет, не всё хорошо, что дорого) 
-                Оперативно назначили уборку на следующий день. 
-                Девушка клинер пришла минута в минуту. Очень приятвная в общении, аккуратная и ненавязчивая.
-                Быстренько переоделась и приступила к работе. Я заказала генеральную уборку, но я не представляла,
-                что она будет настолько генеральной)) квартира блестела!
-                Та грязь, которая, как мне казалось, въелась в поверхность навсегда чудесным образом исчезла. 
-                При том, в другой "крутецкой компании" мне сказали, 
-                что эти загрязнения можно отчистить только парогенератором - ха) в общем, душевая кабина свекает, как и всё в доме.
-                С моей, довольно большой, однушкой клинер справилась за 5 часов. Потом я уже сама прошлась без неё по квартире и оценила,
-                своим придирчивым взглядом - супер! Пыли нет, грязи нет, вещи на месте, химией не воняет - чистота-крастора)
-                плюс порадовал ништячек в виде шоколодки))
-              </p>
-              <p>Надеюсь и желаю вам продолжать в том же духе, что и начали!</p>
-            </div>
-            <a class="feedback__content-button">Ответить</a>
-          </li>
-        </ul>
-        <div class="feedback__nav-buttons">
-          <button class="feedback__nav-button feedback__nav-button--prev"></button>
-          <button class="feedback__nav-button feedback__nav-button--next"></button>
         </div>
-        <button class="feedback__button button button--all">Все отзывы</button>
-      </div>
-    </section>
+      </section>
+      <section class="main-content__about-work about-work">
+        <h2 class="about-work__title title">Типы уборки</h2>
+        <ul class="about-work__list">
+          <li class="about-work__list-item item">
+            <p class="item__title item__title--light">Поддерживающая</p>
+            <ul class="item__todo-list">
+              <li class="item__todo-description">Протираем мебель сверху донизу</li>
+              <li class="item__todo-description">Чистим зеркала и стеклянные поверхности</li>
+              <li class="item__todo-description">Пылесосим ковры</li>
+              <li class="item__todo-description">Моем пол</li>
+              <li class="item__todo-description">Убираем мусор</li>
+              <li class="item__todo-description">Вычищаем пыль из углов</li>
+              <li class="item__todo-description">Протираем плинтусы</li>
+            </ul>
+            <div class="item__make-request">
+              <div class="item__price">
+                <p class="item__price-description">Стоимость уборки <span class="item__price-description-feature">во всех комнатах</span></p>
+                <p class="item__price-cost">1590 руб.</p>
+              </div>
+              <button class="item__order-button button button--request">Оформить заявку</button>
+            </div>
+          </li>
+          <li class="about-work__list-item">
+            <p class="item__title item__title--general">Генеральная</p>
+            <ul class="item__todo-list">
+              <li class="item__todo-description">Протираем мебель сверху донизу</li>
+              <li class="item__todo-description">Чистим зеркала и стеклянные поверхности</li>
+              <li class="item__todo-description">Пылесосим ковры</li>
+              <li class="item__todo-description">Моем пол</li>
+              <li class="item__todo-description">Убираем мусор</li>
+              <li class="item__todo-description">Вычищаем пыль из углов</li>
+              <li class="item__todo-description">Протираем плинтусы</li>
+            </ul>
+            <p class="item__additional-list-title">Генеральная:</p>
+            <ul class="item__todo-list">
+              <li class="item__todo-description item__todo-description--additional">Мойка радиатора отопления</li>
+              <li class="item__todo-description item__todo-description--additional">Очистка выключателей и дверных ручек</li>
+              <li class="item__todo-description item__todo-description--additional">Обеспыливаение настенных светильников</li>
+            </ul>
+            <div class="item__make-request">
+              <div class="item__price">
+                <p class="item__price-description">Стоимость уборки <span class="item__price-description-feature">во всех комнатах</span></p>
+                <p class="item__price-cost">1990 руб.</p>
+              </div>
+              <button class="item__order-button button button--request">Оформить заявку</button>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="main-content__counter counter">
+        <h2 class="visually-hidden">Ozozon в цифрах</h2>
+        <div class="counter__block counter__block--date">
+          <p class="counter__title">Счётчик <span class="counter__title-name">Ozozon</span></p>
+          <p class="counter__date">23 июля 2017</p>
+        </div>
+        <div class="counter__block">
+          <p class="counter__numbers">16882</p>
+          <p class="counter__description">Квартир убрано</p>
+        </div>
+        <div class="counter__block">
+          <p class="counter__numbers">17</p>
+          <p class="counter__description">Сегодня в работе</p>
+        </div>
+        <div class="counter__block">
+          <p class="counter__numbers">2</p>
+          <p class="counter__description">Свободные клинеры</p>
+        </div>
+      </section>
+      <section class="main-content__features features">
+        <h2 class="visually-hidden">Преимущества компании Озозон</h2>
+        <div class="features__container">
+          <p class="features__title title">Вы обязательно останетесь довольны, ведь мы...</p>
+          <ul class="features__list">
+            <li class="features__list-item features__list-item--eco">Используем только уникальные экологичные средства</li>
+            <li class="features__list-item features__list-item--best">Отбираем только самых лучших клинеров</li>
+            <li class="features__list-item features__list-item--technology">Используем особо эффективную технологию уборки</li>
+            <li class="features__list-item features__list-item--love">Очень любим наших клиентов и предоставляем скидки</li>
+          </ul>
+        </div>
+      </section>
+      <section class="main-content__faq faq">
+        <h2 class="faq__title title">Часто задаваемые вопросы</h2>
+        <ul class="faq__list">
+          <li class="faq__list-item">
+            <input type="radio" name="faq-item" id="payment" class="faq__item-input">
+            <label for="payment" class="faq__item-title faq__item-title--payment">По оплате</label>
+            <div class="faq__item-content">
+              <ul class="faq__item-questions">
+                <li class="faq__item-qusetion">Вопрос по оплате</li>
+                <li class="faq__item-qusetion">Вопрос по оплате</li>
+                <li class="faq__item-qusetion">Вопрос по оплате</li>
+              </ul>
+            </div>
+          </li>
+          <li class="faq__list-item">
+            <input type="radio" name="faq-item" id="cleaning" class="faq__item-input" checked>
+            <label for="cleaning" class="faq__item-title faq__item-title--cleaning">По уборке</label>
+            <div class="faq__item-content">
+              <ol class="faq__item-questions">
+                <li class="faq__item-question">
+                  <a href="#">Что входит в Ваши уборки?</a></li>
+                <li class="faq__item-question">
+                  <a href="#">Обязательно ли мое присутствие?</a></li>
+                <li class="faq__item-question">
+                  <a href="#">Чем вы убираетесь?</a></li>
+                <li class="faq__item-question">                
+                  <a href="#">Что нужно предоставить клинеру для уборки?</a></li>
+                <li class="faq__item-question">
+                  <a href="#">Клинеру нужны чистые тряпочки?</a></li>
+                <li class="faq__item-question">
+                  <a href="#">Могу ли я дать клинеру чаевые? Должен ли я предупреждать вас об этом?</a></li>
+                <li class="faq__item-question">
+                  <a href="#">У меня большая квартира. Как её считать?</a></li>
+                <li class="faq__item-question">
+                  <a href="#">Делаете ли вы уборку в выходные?</a></li>
+                <li class="faq__item-question">
+                  <a href="#">Выезжаете ли вы в область за МКАД?</a></li>
+                <li class="faq__item-question">
+                  <a href="#">Что такое подписка и в чем ее преимущество?</a></li>
+                <li class="faq__item-question">
+                  <a href="#">Чем вы не занимаетесь?</a></li>
+              </ol>
+            </div>
+          </li>
+          <li class="faq__list-item">
+            <input type="radio" name="faq-item" id="personal" class="faq__item-input">
+            <label for="personal" class="faq__item-title faq__item-title--personal">По персоналу</label>
+            <div class="faq__item-content">
+              <ul class="faq__item-questions">
+                <li class="faq__item-qusetion">Вопрос по персоналу</li>
+                <li class="faq__item-qusetion">Вопрос по персоналу</li>
+                <li class="faq__item-qusetion">Вопрос по персоналу</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="main-content__feedback feedback">
+        <h2 class="feedback__title">Отзывы</h2>
+        <div class="feedback__container">
+          <ul class="feedback__list">
+            <li class="feedback__item">
+              <div class="feedback__avatar">
+                <img src="#" alt="Аватарка автора отзыва">
+              </div>
+              <div class="feedback__info">
+                <p class="feedback__author">Олеся Воливач</p>
+                <p class="feedback__date">12 окт 2016 в 13:37</p>
+              </div>
+              <div class="feedback__content">
+                <p>Мне посчастливилось стать первым клиентов Озозона, и могу смело сказать, 
+                что наши встречи будут происходить с завидной регулярностью.</p>
+                <p>Позвонила в компанию после того как увидела поразительно низкую цену
+                  (как оказалось, акционную). Ну, думаю, а чего бы и нет, не всё хорошо, что дорого) 
+                  Оперативно назначили уборку на следующий день. 
+                  Девушка клинер пришла минута в минуту. Очень приятвная в общении, аккуратная и ненавязчивая.
+                  Быстренько переоделась и приступила к работе. Я заказала генеральную уборку, но я не представляла,
+                  что она будет настолько генеральной)) квартира блестела!
+                  Та грязь, которая, как мне казалось, въелась в поверхность навсегда чудесным образом исчезла. 
+                  При том, в другой "крутецкой компании" мне сказали, 
+                  что эти загрязнения можно отчистить только парогенератором - ха) в общем, душевая кабина свекает, как и всё в доме.
+                  С моей, довольно большой, однушкой клинер справилась за 5 часов. Потом я уже сама прошлась без неё по квартире и оценила,
+                  своим придирчивым взглядом - супер! Пыли нет, грязи нет, вещи на месте, химией не воняет - чистота-крастора)
+                  плюс порадовал ништячек в виде шоколодки))
+                </p>
+                <p>Надеюсь и желаю вам продолжать в том же духе, что и начали!</p>
+              </div>
+              <a class="feedback__content-button">Ответить</a>
+            </li>
+          </ul>
+          <div class="feedback__nav-buttons">
+            <button class="feedback__nav-button feedback__nav-button--prev"></button>
+            <button class="feedback__nav-button feedback__nav-button--next"></button>
+          </div>
+          <button class="feedback__button button button--all">Все отзывы</button>
+        </div>
+      </section>
+    </div>
   </main>
   <footer class="footer">
     <div class="footer__container">

@@ -1,0 +1,9 @@
+.about-work__list {
+  @include list-reset();
+  display: flex;
+  flex-direction: column;
+}
+
+.about-work {
+  margin-bottom: 40px;
+}

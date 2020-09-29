@@ -1,0 +1,19 @@
+.about-plans__description {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.about-plans__types-descr {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.about-plans__types-list {
+  @include list-reset();
+  display: flex;
+  flex-direction: column;
+}
+
+.about-plans {
+  margin-bottom: 40px;
+}

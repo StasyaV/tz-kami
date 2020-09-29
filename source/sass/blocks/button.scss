@@ -1,0 +1,23 @@
+.button {
+  font-size: 14px;
+  opacity: 0.7;
+  border-radius: 8.5px;
+  border: none;
+
+  &--login {
+    width: 50%;
+    background-color: transparent;
+    padding: 10px 20px;
+    border: 2px solid $border-color;
+    color: $menu-font-color;
+  }
+
+  &--submit,
+  &--request {
+    color: $main-font-color;
+    padding: 10px 15px;
+    border-radius: 10.3px;
+    box-shadow: 0.2px 0.5px 2.4px 0.1px rgba(0, 0, 0, 0.2);
+    background-image: linear-gradient(to top, $main-color, $button-color);
+  }
+}
