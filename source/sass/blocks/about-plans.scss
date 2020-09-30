@@ -16,4 +16,19 @@
 
 .about-plans {
   margin-bottom: 40px;
+  padding-top: 30px;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 100vw;
+    height: 2px;
+    display: block;
+    background-color: $border-color;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+  }
 }
