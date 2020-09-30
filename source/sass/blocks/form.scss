@@ -63,3 +63,37 @@
     margin-bottom: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .form {
+    margin-bottom: 80px;
+  }
+
+  .form__request {
+    width: 720px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .form__option-description {
+    color: $header-background;
+    font-weight: 300;
+  }
+
+  .form__option-list {
+    width: 230px;
+  }
+
+  .form__offer {
+    font-size: 18px;
+    color: $menu-font-color;
+  }
+
+  .form__offer-type {
+    font-weight: normal;
+
+    &--code {
+      color: $second-color;
+    }
+  }
+}

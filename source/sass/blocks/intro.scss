@@ -68,3 +68,13 @@
     font-size: 28px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .intro__offer {
+    font-size: 36px;
+  }
+
+  .intro__offer-price {
+    font-size: 48px;
+  }
+}

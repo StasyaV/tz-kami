@@ -89,16 +89,18 @@
   .faq__item-content {
     position: absolute;
     top: 150px;
-    left: 2%;
+    left: 50%;
+    transform: translateX(-50%);
     padding: 10px 20px;
     background-color: $menu-font-color;
     border-radius: 10px;
     box-shadow: 0 2.5px 7.5px 0 rgba(0, 0, 0, 0.1);
-    width: 750px;
+    width: 690px;
   }
 
   .faq__list-item {
     border: none;
+    padding: 0;
   }
 
   .faq__item-questions {
@@ -110,7 +112,7 @@
   }
 
   .faq__item-question {
-    width: 50%;
+    width: 53%;
   }
 
   .faq__item-title {
@@ -118,5 +120,44 @@
     background-color: $menu-font-color;
     border-radius: 10px;
     box-shadow: 0 2.5px 7.5px 0 rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .faq {
+    position: relative;
+    margin-bottom: 90px;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 100vw;
+      height: 550px;
+      background-color: $background-color;
+      overflow: hidden;
+      position: absolute;
+      z-index: -1;
+      top: -50px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  .faq__title {
+    margin-bottom: 50px;
+  }
+
+  .faq__list-item {
+    width: 30%;
+  }
+
+  .faq__item-content {
+    top: 110px;
+    width: 100%;
+    padding: 20px 60px;
+  }
+
+  .faq__item-question {
+    width: 48%;
   }
 }

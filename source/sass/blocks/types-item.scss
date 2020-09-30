@@ -10,6 +10,8 @@
   display: flex;
   align-items: center;
   font-size: 18px;
+  font-weight: 300;
+  color: $header-background;
 
   &::after {
     content: "";
@@ -76,12 +78,23 @@
   .types-item__description {
     position: absolute;
     top: 60px;
-    left: 0;
-    right: 0;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .types-item__image {
     max-width: 720px;
     height: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .types-item__input ~ label {
+    border-bottom: 1px dashed $header-background;
+    line-height: 18px;
+  }
+
+  .types-item__input:checked ~ label {
+    border: none;
   }
 }

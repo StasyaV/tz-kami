@@ -62,3 +62,26 @@
     position: relative;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .about-plans {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 65px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .about-plans__description {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .about-plans__types-descr {
+    font-size: 18px;
+    line-height: 18px;
+  }
+}

@@ -80,3 +80,16 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .counter {
+    padding: 20px 60px;
+    margin-bottom: 70px;
+    border-radius: 10px;
+    box-shadow: 0 0 7.1px 0.4px rgba(0, 0, 0, 0.1);
+
+    &::before {
+      display: none;
+    }
+  }
+}

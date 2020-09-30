@@ -150,3 +150,59 @@
     font-size: 16px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .item {
+    width: 45%;
+    height: 650px;
+    padding: 30px 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 7.1px 0.4px rgba(0, 0, 0, 0.1);
+  }
+
+  .item__title {
+    margin-bottom: 40px;
+  }
+
+  .item__additional-list-title {
+    margin-left: 35px;
+  }
+
+  .item__price {
+    font-size: 16px;    
+    line-height: 20px;
+    font-weight: 300;
+  }
+
+  .item__price-description {
+    color: $main-font-color;
+  }
+
+  .item__price-description-feature {
+    font-size: 14px;
+    color: $header-background;
+  }
+
+  .item__price-cost {
+    font-size: 38px;
+    font-weight: 500;
+  }
+
+  .item__todo-list {
+    margin-bottom: 30px;
+  }
+
+  .item__make-request {
+    border: none;
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 140%;
+      height: 2px;
+      margin-bottom: 30px;
+      background-color: $border-color;
+    }
+  }
+}

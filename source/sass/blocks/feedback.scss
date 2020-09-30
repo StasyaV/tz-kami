@@ -113,7 +113,7 @@
     background-color: $menu-font-color;
     border-radius: 10px;
     box-shadow: 0 2.5px 7.5px 0 rgba(0, 0, 0, 0.1);
-    width: 750px;
+    width: 680px;
     position: relative;
   }
 
@@ -146,5 +146,41 @@
     left: 50%;
     bottom: 50%;
     transform: translateX(-50%);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback__title {
+    margin-bottom: 50px;
+  }
+
+  .feedback__list {
+    position: relative;
+    padding-top: 70px;
+    margin-bottom: 40px;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 100vw;
+      height: 560px;
+      background-image: url("../../img/feedback-back.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: -1;
+    }
+  }
+
+  .feedback__item {
+    width: 100%;
+  }
+
+  .feedback__nav-buttons {
+    width: 105%;
+    bottom: 45%;
   }
 }
