@@ -10,3 +10,15 @@
   color: $second-color;
   margin-bottom: 15px;
 }
+
+@media (min-width: $tablet-width) {
+  .account {
+    margin-bottom: 0;
+  }
+
+  .account__phone {
+    margin-bottom: 0;
+    font-size: 14px;
+    margin-right: 20px;
+  }
+}

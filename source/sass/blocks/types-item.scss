@@ -43,3 +43,45 @@
 .types-item__image {
   margin: 0 auto;
 }
+
+@media (min-width: $tablet-width) {
+  .types-item {
+    border: none;
+    padding: 0 10px;
+  }
+
+  .types-item__title {
+    font-size: 18px;
+    font-weight: normal;
+  }
+
+  .types-item__input ~ label {
+    font-size: 16px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .types-item__input:checked ~ .types-item__title {
+    font-weight: normal;
+    color: $active-color;
+    margin-bottom: 0;
+  }
+
+  .types-item__todo-list {
+    display: none;
+  }
+
+  .types-item__description {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+  }
+
+  .types-item__image {
+    max-width: 720px;
+    height: auto;
+  }
+}

@@ -1,6 +1,7 @@
 .intro {
   padding: 45px 20px;
   margin-bottom: 40px;
+  min-height: 320px;
   font-family: $second-font;
   font-weight: bold;
   position: relative;
@@ -47,4 +48,23 @@
 .intro__offer-price {
   color: $main-color;
   margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .intro {
+    margin-bottom: 10px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .intro__title {
+    font-size: 46px;
+    line-height: 60px;
+  }
+
+  .intro__offer {
+    font-size: 28px;
+  }
 }

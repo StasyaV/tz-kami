@@ -16,3 +16,19 @@
     border-top: none;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .main-nav__item-link {
+    font-size: 16px;
+  }
+
+  .main-nav__item {
+    border: none;
+    padding: 5px;
+  }
+
+  .main-nav__list {
+    display: flex;
+    flex-direction: row;
+  }
+}

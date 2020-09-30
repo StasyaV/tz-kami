@@ -35,3 +35,59 @@
     display: none;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .header {
+    background-color: transparent;
+  }
+
+  .header__menu-button {
+    display: none;
+  }
+
+  .header__navigation {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .header__block {
+    justify-content: flex-start;
+    flex-direction: row;
+    padding: 0;
+  }
+
+  .header__logo {
+    flex-grow: 0;
+  }
+
+  .header__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 0 auto;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: -1;
+      display: block;
+      width: 100vw;
+      height: 500px;
+      overflow: hidden;
+      background-image: url("../../img/intro-back.jpg");
+      background-color: $header-background;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+}

@@ -1,7 +1,6 @@
 .button {
   font-size: 14px;
-  opacity: 0.7;
-  border-radius: 8.5px;
+  border-radius: 20px;
   border: none;
 
   &--login {
@@ -16,15 +15,34 @@
   &--request {
     color: $main-font-color;
     padding: 10px 15px;
-    border-radius: 10.3px;
     box-shadow: 0.2px 0.5px 2.4px 0.1px rgba(0, 0, 0, 0.2);
     background-image: linear-gradient(to top, $main-color, $button-color);
   }
 
   &--all {
     padding: 10px 20px;
-    border-radius: 11.3px;
     box-shadow: 0 0.5px 2.4px 0.1px rgba(0, 0, 0, 0.4);
     background-image: linear-gradient(to top, $main-color, $button-color);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    &--login {
+      width: 100px;
+      padding: 5px 10px;
+    }
+
+    &--submit,
+    &--request {
+      width: 150px;
+      align-self: center;
+      padding: 10px;
+    }
+
+    &--all {
+      padding: 20px;
+      width: 200px;
+    }
   }
 }

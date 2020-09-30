@@ -38,3 +38,28 @@
   font-weight: bold;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .form {
+    flex-direction: column;
+  }
+
+  .form__choose-option {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .form__request {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: $menu-font-color;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  }
+
+  .form__offer {
+    margin-bottom: 0;
+  }
+}

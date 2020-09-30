@@ -61,6 +61,13 @@ button {
   margin-bottom: 25px;
 }
 
+@media (min-width: $tablet-width) {
+  .title {
+    font-size: 36px;
+    text-align: center;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .container {
     padding: 0 30px;
