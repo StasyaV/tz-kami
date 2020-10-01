@@ -476,9 +476,6 @@ button {
 a:hover, a:active, a:focus {
   color: #62d5e9; }
 
-button:hover, button:active, button:focus {
-  background-color: #62d5e9; }
-
 input[type="radio"]:hover ~ label {
   color: #62d5e9; }
 

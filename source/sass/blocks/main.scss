@@ -61,14 +61,6 @@ a {
   }
 }
 
-button {
-  &:hover,
-  &:active,
-  &:focus {
-    background-color: $active-color;
-  }
-}
-
 input[type="radio"]:hover ~ label {
   color: $active-color;
 }
