@@ -56,26 +56,26 @@
 
   &--eco {
     &::before {
-      background-image: url("../../img/icon-eco.png");
+      background-image: url("../img/icon-eco.png");
     }
   }
 
   &--best {
     &::before {
-      background-image: url("../../img/icon-best.png");
+      background-image: url("../img/icon-best.png");
       width: 60px;
     }
   }
 
   &--technology {
     &::before {
-      background-image: url("../../img/icon-technology.png");
+      background-image: url("../img/icon-technology.png");
     }
   }
 
   &--love {
     &::before {
-      background-image: url("../../img/icon-love.png");
+      background-image: url("../img/icon-love.png");
     }
   }
 }
@@ -106,11 +106,15 @@
 
     &::before {
       height: 460px;
-      background-image: url("../../img/features-back.jpg");
+      width: 100vw;
+      overflow: hidden;
+      background-image: url("../img/features-back.jpg");
       background-repeat: no-repeat;
-      background-size: contain;
+      background-size: cover;
       position: absolute;
       top: 0;
+      left: 50%;
+      transform: translateX(-50%);
       z-index: -1;
     }
 

@@ -17,13 +17,13 @@
 .header__menu-button {
   background-color: transparent;
   border: none;
-  background-image: url("../../img/icon-close.svg");
+  background-image: url("../img/icon-close.svg");
   background-repeat: no-repeat;
   width: 25px;
   height: 28px;
 
   &--closed {
-    background-image: url("../../img/icon-mobile-menu.svg");
+    background-image: url("../img/icon-mobile-menu.svg");
   }
 }
 
@@ -84,7 +84,7 @@
       width: 100vw;
       height: 500px;
       overflow: hidden;
-      background-image: url("../../img/intro-back.jpg");
+      background-image: url("../img/intro-back.jpg");
       background-color: $header-background;
       background-size: cover;
       background-repeat: no-repeat;

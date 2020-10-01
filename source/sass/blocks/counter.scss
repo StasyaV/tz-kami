@@ -35,6 +35,18 @@
   }
 }
 
+.counter__offer {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+.counter__offer-link {
+  color: $button-color;
+  font-weight: normal;
+}
+
 .counter__title {
   font-size: 26px;
   margin: 0;
@@ -70,6 +82,12 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .counter__offer {
+    width: 100%;
+    margin-bottom: 20px;
   }
 
   .counter__block {

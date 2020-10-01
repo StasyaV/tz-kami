@@ -19,6 +19,7 @@ body {
   line-height: 28px;
   font-family: $main-font;
   color: $main-font-color;
+  overflow-x: hidden;
 }
 
 img {
@@ -43,13 +44,33 @@ input[type="radio"] {
 .container {
   margin: 0 auto;
   padding: 0 20px;
-  max-width: 1040px;
+  max-width: 1050px;
 }
 
 a,
 input + label,
 button {
   cursor: pointer;
+}
+
+a {
+  &:hover,
+  &:active,
+  &:focus {
+    color: $active-color;
+  }
+}
+
+button {
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $active-color;
+  }
+}
+
+input[type="radio"]:hover ~ label {
+  color: $active-color;
 }
 
 .title {

@@ -27,6 +27,25 @@
 @media (min-width: $desktop-width) {
   .account {
     flex-direction: row;
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-image: url("../img/icon-phone.svg");
+      background-color: $phone-widget-color;
+      background-size: 35px auto;
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      top: 75px;
+      left: 100%;
+      transform: translateX(-100%);
+      cursor: pointer;
+    }
   }
 
   .account__phone {

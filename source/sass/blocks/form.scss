@@ -25,7 +25,14 @@
 .form__option-list {
   flex-grow: 1;
   padding: 5px 15px;
-  border-radius: 5px;
+  border-radius: 5px;  
+  cursor: pointer;
+
+  &:hover,
+  &:active,
+  &:focus {
+    border-color: $active-color;
+  }
 }
 
 .form__offer {

@@ -8,3 +8,9 @@
 .footer {
   border-top: 2px solid $border-color;
 }
+
+@media (min-width: $desktop-width) {
+  .footer {
+    border-top: none;
+  }
+}
